@@ -1,0 +1,29 @@
+.image1{
+    height: 550px;
+    width: 550px;
+}
+.image2{
+    height: 550px;
+    width: 350px;
+}
+
+.propos{
+    height: 500px;
+    width: 400px;
+    z-index: 1;
+    padding: 20px;
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+}
+
+.font{
+    position: absolute;
+    z-index: auto;
+    height: 620px;
+    width: 100%;
+}
+
+

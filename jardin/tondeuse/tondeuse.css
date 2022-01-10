@@ -1,0 +1,145 @@
+body{
+    background-color: black;
+}
+
+.ecran{
+    height: 400px; 
+    background-color: blue;
+    width: 1450px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    animation-duration: 20s;
+    animation-name: box;
+    animation-iteration-count: infinite;
+}
+.a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    background-color: white;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 400px;
+    align-self: flex-end;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.container_1{
+    background-color: white;
+    flex-wrap: wrap;
+    height: 320px;
+    width: 350px;
+    align-self: flex-end;
+    z-index: 1000;
+}
+
+.herbe{
+    background-color: green;
+    width: 1450px;
+    height: 100px;
+    z-index: 1500;
+}
+.fenetrea{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    
+}
+
+.partit{
+    background-color: white;
+    margin: 10px;
+    width: 320px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.porte{
+    background-color: white;
+    margin: 10px;
+    width: 320px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.portea{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+}
+
+.partitb{
+    background-color: white;
+    margin: 5px;
+    width: 320px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.tondeur{
+    height: 100px;
+    width: 100px;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    image-orientation:  90deg flip;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 0%;
+    }
+    50% {
+        margin-left: 100%;
+        animation-direction: reverse;
+    }
+    to {
+    margin-left: 100%;
+    }
+}
+
+@keyframes box {
+    0% {background-color: rgb(26, 37, 73)}
+    12% {background-color: rgb(0, 60, 255);}
+    25% {background-color: rgb(0, 119, 255);}
+    37% {background-color: rgb(0, 132, 255);}
+    50% {background-color: rgb(21, 169, 255);}
+    62% {background-color: rgb(0, 132, 255);}
+    75% {background-color: rgb(0, 119, 255);}
+    100% {background-color: rgb(26, 37, 73);}
+}
+
+.soleil{
+    height: 100px;
+    width: 100px;
+    animation-duration: 20s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+    z-index: auto;
+}
+
+@keyframes bounce {
+    from {
+    margin-left: 0%;
+    margin-top: 15%;
+    }
+
+    to {
+    margin-left: 100%;
+    margin-top: 0%;
+    }
+}
